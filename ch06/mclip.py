@@ -1,4 +1,4 @@
-#!usr/bin/env python3
+#!/usr/bin/env python3
 # mclip.py - A multi-clipboard program.
 
 TEXT = {'agree': """Yes. I agree. That sounds fine to me.""",
