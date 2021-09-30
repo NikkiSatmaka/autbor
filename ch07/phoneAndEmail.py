@@ -49,7 +49,7 @@ for groups in emailRegex.findall(text):
     matches.append(groups[0])
 
 
-# TODO: Copy results to clipboard.
+# Copy results to clipboard.
 if len(matches) > 0:
     pyperclip.copy('\n'.join(matches))
     print('Copied to clipboard:')

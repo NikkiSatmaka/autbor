@@ -1,3 +1,3 @@
 @CALL conda.bat activate autostuff
-@python.exe ".\mclip.py" %*
+@pythonw.exe ".\mcb.pyw" %*
 @pause
