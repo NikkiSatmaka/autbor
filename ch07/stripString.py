@@ -12,15 +12,16 @@ def stripString(text, char = None):
 
     # Remove characters provided in second arguments
     if char != None:
-        charRegex = re.compile(f'[{str(char)}]')
+        # charRegex = re.compile(f'[{str(char)}]')
+        charRegex = re.compile(r'[' + re.escape(char) + r']')
         text = charRegex.sub('', text)
 
     return text
 
 
-mytext = '     3238      asdfasdfas dfasdfs.  x   .           '
+mytext = r'     3238 .,  !@#$%^&*()[]{}   asdfasdfas dfasdfs.  x   .           '
 
-outtext = stripString(mytext, 'xsa2')
+outtext = stripString(mytext, 'xs,.a^*2')
 
 print(len(outtext) * '-')
 print(outtext)
